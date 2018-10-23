@@ -12,7 +12,7 @@ This project is compiled by makefile.
 make
 ```
 
-There are two arguments here in this program, which is the numbers of using cores and the number of attemps in monte carlo method.
+There are two arguments here in this program, which is the number of using cores and the number of attemps in monte carlo method.
 ``` sh
 ./pi.out <number_of_cores> <number_of_throws>
 ```
