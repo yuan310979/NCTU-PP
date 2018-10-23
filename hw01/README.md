@@ -1,6 +1,8 @@
 Programming Assignment I: Pthreads Programming
 ==============================================
 
+![Execution](https://i.imgur.com/2lKdZVY.png)
+
 About
 -----
 This project is the first coding assignment by NCTU Parallel Programming, lectured by Prof. Yi-Ping You. Written by c to implement Monte Carlo Method to estimate pi value. Also, this program is accelerated by Pthread Library.
