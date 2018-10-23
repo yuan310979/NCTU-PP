@@ -1,6 +1,8 @@
 TARGET=pi.out
 CC=gcc
 LIB=-lpthread
+SOURCE=pi.c
+C_FLAGS=-O2
 
 all: pi.c
-	$(CC) pi.c -o $(TARGET) $(LIB)
+	$(CC) $(SOURCE) -o $(TARGET) $(LIB) $(C_FLAGS)
