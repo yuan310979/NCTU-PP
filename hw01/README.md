@@ -26,6 +26,4 @@ ex:
 Further
 -------
 #### Why we use rand_r() instead of rand() in random number generator?
-rand() and rand_r() are almost the same. But when you dig deep into the source code. You will find that, in rand() function, it will call rand_r() as a random number generator. Furthermore, it not only rely on rand_r() but also has a mutex lock on access rand_r() value. So if you use rand() function as our program's random number generator, since this estimator use pthread as parallel library, each thread will be block while generating random number. It will cause a severe problem that using 2 cores is faster than 4 cores in our testing.
-arogramming Assignment I: Pthreads Programming
-
+rand() and rand_r() are almost the same. But when you dig deep into the source code. You will find out that, in rand() function, it will call rand_r() as a random number generator. Furthermore, it not only rely on rand_r() but also has a mutex lock on access rand_r() value. So if you use rand() function as our program's random number generator, since this estimator use pthread as parallel library, each thread will be block while generating random number. It will cause a severe problem that using 2 cores is faster than 4 cores in our testing.
