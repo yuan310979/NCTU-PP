@@ -20,3 +20,5 @@ prime.o: prime.c
 integrate.o: integrate.c
 	$(CC) -c $^ -o $@
 
+clean:
+	rm -f $(OBJ1) $(OBJ2) $(BINDIR)/$(PROGRAMNAME1) $(BINDIR)/$(PROGRAMNAME2) 
